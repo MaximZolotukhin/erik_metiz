@@ -2,7 +2,7 @@ motorcycles = ['Harley-Davidson', 'Suzuki', 'Kawasaki', 'honda', 'Ducati', 'Yama
 print(motorcycles)
 
 ''' 
-Занчение через remove можно удалить и с помощью переменной, 
+Значение через remove можно удалить и с помощью переменной, 
 чтобы в дальнейшем ее использовать для вывода сообщения о причине удаления
 '''
 too_exprensive = 'honda'

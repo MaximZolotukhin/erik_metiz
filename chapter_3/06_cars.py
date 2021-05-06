@@ -1,15 +1,15 @@
-#Сортировка по алфавиту
+# Сортировка по алфавиту
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 cars.sort()
 print(cars)
 
-#Сортировка по алфавиту в обратном порядке
+# Сортировка по алфавиту в обратном порядке
 cars.sort(reverse=True)
 print(cars)
 
 print('*' * 33)
 
-#Временная сортировка списка
+# Временная сортировка списка
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 print('Оригинальный список cars: ')
 print(cars)

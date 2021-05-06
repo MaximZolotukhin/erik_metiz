@@ -20,6 +20,11 @@ for name in favorite_languages.keys():
     if name in frends_select:
         print(f"    Привет {name.title()}, я тоже учу {favorite_languages[name].title()}")
 
+print()
 # Так как в языке Python по умолчанию используется вызов ключа в словаре, то метод keys() можно не использовать.
 if 'erin' not in favorite_languages.keys():
     print(f"Erin присоединяйся к нашему опросу =)")
+print()
+# Сортировка ключей словарая по алфавиту.
+for name in sorted(favorite_languages.keys()):
+    print(f"{name.title()} спасибо за участи в опросе")
