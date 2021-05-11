@@ -1,3 +1,4 @@
+# Перебор всего списка с помощью цикла for
 magicians = ['гарри поттер', 'рон визли', 'гермиона грейнжер']
 for magician in magicians:
     print(f'{magician.title()} - это был великий трюк')
