@@ -1,3 +1,4 @@
+# Раота с кортежем
 diemensions = (200, 50)
 print(diemensions[0])
 print(diemensions[1])
