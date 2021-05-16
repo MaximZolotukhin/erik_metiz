@@ -1,3 +1,4 @@
+"""Удаление и добавление занчений."""
 # Список марок мотоциклов
 motorcycles = ['Harley-Davidson', 'Suzuki', 'Kawasaki', 'Honda', 'Ducati', 'Yamaha']
 print(motorcycles)
@@ -6,7 +7,7 @@ print(motorcycles)
 motorcycles[0] = 'java'
 print(motorcycles)
 
-# Удаление занчения с сохранение в переменную
+# Удаление значения c сохранением в переменную
 moto_name = motorcycles.pop(0)
 print(motorcycles)
 

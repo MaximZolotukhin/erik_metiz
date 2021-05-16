@@ -1,3 +1,4 @@
+"""Виды сортировок"""
 # Сортировка по алфавиту
 cars = ['bmw', 'audi', 'toyota', 'subaru']
 cars.sort()
