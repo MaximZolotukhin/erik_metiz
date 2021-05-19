@@ -1,3 +1,4 @@
+"""Определение атрибутов и методов класса-потомка"""
 # Изменение атрибутов с приращение заданной величены.
 
 class Car():
@@ -9,7 +10,10 @@ class Car():
         self.odometr_readin = 0
 
     def get_descriptive_name(self):
-        """Возвращает аккуратно отформатированное описание."""
+        """
+        Инициализирует атрибуты класс-родителя.
+        Затем иницилазирует атрибуты, специфически для электромобиля.
+        """
         long_name = f"{self.year} {self.manufacturer} {self.model}"
         return long_name.title()
 
@@ -29,14 +33,22 @@ class Car():
 
     def increment_odometr(self, miles):
         """Увеличивает покзания одометра с заданным приращением"""
-        self.odometr_readin +=miles
+        self.odometr_readin += miles
 
-my_new_car = Car('subare', 'outback', '2015')
-print(my_new_car.get_descriptive_name())
-my_new_car.read_odometr()
 
-my_new_car.update_odometr(23_500)
-my_new_car.read_odometr()
+class ElectricCar(Car):
+    """Представляет аспекты машины, специфические для электромобилей."""
 
-my_new_car.increment_odometr(100)
-my_new_car.read_odometr()
+    def __init__(self, make, model, year):
+        """инициализирует атрибуты класс-родителя."""
+        super().__init__(make, model, year)
+        self.battery_size = 75
+
+    def describe_battery(self):
+        """Выводит информацию о мощности аккумулятора."""
+        print(f"В этой машине установлен аккумулятор мощностью {self.battery_size}-kWh .")
+
+
+my_tesla = ElectricCar('tesla', 'model s', '2019')
+print(my_tesla.get_descriptive_name())
+my_tesla.describe_battery()
