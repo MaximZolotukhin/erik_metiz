@@ -59,5 +59,3 @@ rest_ice_cream.append_value_flavors("Магнат")
 rest_ice_cream.append_value_flavors("Серебрянная пуля")
 rest_ice_cream.append_value_flavors("Чистая линия")
 rest_ice_cream.get_list_flavors()
-
-
