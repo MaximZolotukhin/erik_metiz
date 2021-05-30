@@ -1,3 +1,4 @@
+"""Цепочки if-elif-else"""
 age = 12
 
 if age < 4:
